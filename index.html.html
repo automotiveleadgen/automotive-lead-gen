@@ -1,0 +1,1000 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Automotive Lead Generation | Japanese Car Export B2B Growth Engine</title>
+
+    <!-- Google Fonts: Sora (Headings) & Montserrat (Body & Nav) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&family=Sora:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        deepMaroon: {
+                            50: '#fff1f2',
+                            100: '#ffe4e6',
+                            200: '#fecdd3',
+                            600: '#e11d48',
+                            700: '#be123c',
+                            800: '#991b1b',
+                            900: '#800020',
+                            950: '#4c0519',
+                        },
+                        charcoal: '#0F172A',
+                        offWhite: '#FAFAFC'
+                    },
+                    fontFamily: {
+                        sora: ['Sora', 'sans-serif'],
+                        montserrat: ['Montserrat', 'sans-serif'],
+                    },
+                    boxShadow: {
+                        'glass': '0 10px 30px -10px rgba(128, 0, 32, 0.08), 0 4px 12px rgba(0, 0, 0, 0.03)',
+                        'cardHover': '0 20px 40px -15px rgba(128, 0, 32, 0.12)',
+                        'highlightPulse': '0 0 0 4px rgba(128, 0, 32, 0.25), 0 20px 40px -15px rgba(128, 0, 32, 0.2)'
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-fontawesome/6.4.0/css/all.min.css">
+
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: #FAFAFC;
+            color: #0F172A;
+            overflow-x: hidden;
+        }
+
+        h1, h2, h3, h4, .font-sora {
+            font-family: 'Sora', sans-serif;
+        }
+
+        /* Glassmorphism Header */
+        .glass-header {
+            background: rgba(250, 250, 252, 0.88);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+        }
+
+        /* Maroon Gradient Utilities */
+        .text-maroon-gradient {
+            background: linear-gradient(135deg, #4c0519 0%, #800020 45%, #be123c 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .bg-maroon-gradient {
+            background: linear-gradient(135deg, #800020 0%, #991b1b 50%, #be123c 100%);
+        }
+
+        .bg-maroon-gradient-hover {
+            transition: all 0.25s ease-in-out;
+        }
+        .bg-maroon-gradient-hover:hover {
+            background: linear-gradient(135deg, #4c0519 0%, #800020 50%, #991b1b 100%);
+            box-shadow: 0 8px 24px rgba(128, 0, 32, 0.25);
+            transform: translateY(-1px);
+        }
+
+        /* Form Highlight Glow Animation */
+        .form-glow-active {
+            animation: formGlowPulse 2.5s ease-in-out infinite;
+        }
+        @keyframes formGlowPulse {
+            0% { box-shadow: 0 0 0 0 rgba(128, 0, 32, 0.4); border-color: #800020; }
+            50% { box-shadow: 0 0 0 8px rgba(128, 0, 32, 0.15); border-color: #be123c; }
+            100% { box-shadow: 0 0 0 0 rgba(128, 0, 32, 0.4); border-color: #800020; }
+        }
+
+        /* Marquee Ticker Animation */
+        @keyframes marquee {
+            0% { transform: translateX(0%); }
+            100% { transform: translateX(-50%); }
+        }
+        .animate-marquee {
+            display: flex;
+            width: 200%;
+            animation: marquee 28s linear infinite;
+        }
+        .animate-marquee:hover {
+            animation-play-state: paused;
+        }
+
+        /* Range Slider Styling */
+        input[type=range] {
+            -webkit-appearance: none;
+            background: #E2E8F0;
+            border-radius: 999px;
+            height: 7px;
+        }
+        input[type=range]::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            height: 22px;
+            width: 22px;
+            border-radius: 50%;
+            background: #800020;
+            cursor: pointer;
+            box-shadow: 0 0 12px rgba(128, 0, 32, 0.35);
+            border: 3px solid #FFFFFF;
+            transition: transform 0.15s ease;
+        }
+        input[type=range]::-webkit-slider-thumb:hover {
+            transform: scale(1.15);
+        }
+
+        .pulse-dot {
+            box-shadow: 0 0 0 0 rgba(128, 0, 32, 0.4);
+            animation: pulse-dot 2s infinite;
+        }
+        @keyframes pulse-dot {
+            0% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(128, 0, 32, 0.4); }
+            70% { transform: scale(1); box-shadow: 0 0 0 8px rgba(128, 0, 32, 0); }
+            100% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(128, 0, 32, 0); }
+        }
+    </style>
+</head>
+<body class="antialiased selection:bg-deepMaroon-900 selection:text-white relative bg-[#FAFAFC]">
+
+    <!-- HTML5 Motion Graphics Canvas ($3-$7 CPL Data Streams) -->
+    <canvas id="dataMotionCanvas" class="fixed inset-0 pointer-events-none z-0 opacity-45"></canvas>
+
+    <div class="relative z-10">
+
+        <!-- ULTRA-CLEAN GLASS HEADER (Single Line Layout) -->
+        <header class="fixed top-0 left-0 right-0 z-50 glass-header border-b border-slate-200/80 h-16 flex items-center">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full flex items-center justify-between">
+                
+                <!-- Logo & Short Name in 1 Line -->
+                <a href="#" class="flex items-center gap-2.5 group whitespace-nowrap">
+                    <div class="w-7 h-7 rounded-lg bg-deepMaroon-900 text-white flex items-center justify-center font-bold text-xs shadow-sm group-hover:scale-105 transition-transform">
+                        <i class="fa-solid fa-car-side"></i>
+                    </div>
+                    <span class="font-sora font-extrabold text-sm sm:text-base text-slate-900 tracking-tight">
+                        Automotive <span class="text-maroon-gradient">Lead Gen</span>
+                    </span>
+                </a>
+
+                <!-- Navigation Links in Single Line -->
+                <nav class="hidden md:flex items-center gap-6 text-[13px] font-semibold text-slate-600 whitespace-nowrap">
+                    <a href="#proof" class="hover:text-deepMaroon-900 transition-colors">Proof</a>
+                    <a href="#regions" class="hover:text-deepMaroon-900 transition-colors">Coverage Regions</a>
+                    <a href="#performance" class="hover:text-deepMaroon-900 transition-colors">Performance</a>
+                    <a href="#calculator" class="hover:text-deepMaroon-900 transition-colors">ROI Calculator</a>
+                    <a href="#faqs" class="hover:text-deepMaroon-900 transition-colors">FAQ</a>
+                </nav>
+
+                <!-- Header CTA Button -> Google Form -->
+                <div class="flex items-center gap-3">
+                    <a href="https://forms.gle/h6YJxE1LcGhWpSx38" target="_blank" class="px-4 py-2 rounded-lg bg-maroon-gradient text-white font-bold text-xs tracking-wider uppercase bg-maroon-gradient-hover shadow-sm whitespace-nowrap cursor-pointer inline-flex items-center gap-1.5">
+                        <span>Contact Us</span>
+                    </a>
+                    
+                    <button id="mobileMenuBtn" class="md:hidden p-1.5 text-slate-700 hover:text-slate-900 text-lg">
+                        <i class="fa-solid fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Mobile Drawer -->
+            <div id="mobileDrawer" class="hidden md:hidden absolute top-16 left-0 right-0 bg-white border-b border-slate-200 px-6 py-4 flex flex-col gap-3 text-xs font-bold uppercase tracking-wider text-slate-700 shadow-lg">
+                <a href="#proof" class="hover:text-deepMaroon-900 py-1" onclick="toggleMobileDrawer()">Proof</a>
+                <a href="#regions" class="hover:text-deepMaroon-900 py-1" onclick="toggleMobileDrawer()">Coverage Regions</a>
+                <a href="#performance" class="hover:text-deepMaroon-900 py-1" onclick="toggleMobileDrawer()">Performance</a>
+                <a href="#calculator" class="hover:text-deepMaroon-900 py-1" onclick="toggleMobileDrawer()">ROI Calculator</a>
+                <a href="#faqs" class="hover:text-deepMaroon-900 py-1" onclick="toggleMobileDrawer()">FAQ</a>
+                <a href="https://forms.gle/h6YJxE1LcGhWpSx38" target="_blank" onclick="toggleMobileDrawer()" class="px-4 py-2.5 rounded-lg bg-maroon-gradient text-white font-bold text-xs text-center uppercase">
+                    Contact Us
+                </a>
+            </div>
+        </header>
+
+        <main class="pt-16">
+
+            <!-- HERO SECTION (Centered Content) -->
+            <section class="relative pt-12 pb-12 lg:pt-20 lg:pb-16 overflow-hidden text-center">
+                <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 space-y-6">
+                    
+                    <!-- Badge -->
+                    <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white border border-slate-200 shadow-sm text-xs font-bold text-slate-800 mx-auto">
+                        <span class="w-2 h-2 rounded-full bg-deepMaroon-700 pulse-dot"></span>
+                        <span>B2B META LEAD ENGINE FOR JAPANESE CAR EXPORTERS</span>
+                    </div>
+
+                    <!-- Main Headline (Updated as requested) -->
+                    <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold text-slate-900 tracking-tight leading-[1.12] font-sora">
+                        Looking to generate more <span class="text-maroon-gradient">qualified leads</span> for your automotive business?
+                    </h1>
+
+                    <!-- Subheadline -->
+                    <p class="text-slate-600 text-sm sm:text-base font-medium leading-relaxed max-w-2xl mx-auto">
+                        Direct wholesale buyer and dealer leads from the <strong>Caribbean, UK, USA, GCC, East Africa & South Pacific</strong> straight to your sales desk on WhatsApp.
+                    </p>
+
+                    <!-- CTAs -->
+                    <div class="flex flex-col sm:flex-row items-center justify-center gap-3.5 pt-2">
+                        <a href="https://forms.gle/h6YJxE1LcGhWpSx38" target="_blank" class="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 px-6 py-3.5 rounded-xl bg-maroon-gradient text-white font-bold text-xs uppercase tracking-wider bg-maroon-gradient-hover shadow-md cursor-pointer">
+                            <span>Contact Us Now</span>
+                            <i class="fa-solid fa-arrow-right text-[11px]"></i>
+                        </a>
+                        <a href="#proof" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-5 py-3.5 rounded-xl bg-white hover:bg-slate-50 text-slate-800 font-bold text-xs tracking-wide border border-slate-200 shadow-sm transition-colors">
+                            <i class="fa-solid fa-chart-line text-deepMaroon-800"></i>
+                            <span>View Campaign Results</span>
+                        </a>
+                    </div>
+
+                    <!-- Feature Checks -->
+                    <div class="pt-6 flex flex-wrap items-center justify-center gap-6 border-t border-slate-200/80 text-xs font-semibold text-slate-500">
+                        <div class="flex items-center gap-2">
+                            <i class="fa-solid fa-check text-emerald-600"></i>
+                            <span>100% Exclusive Leads</span>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <i class="fa-solid fa-check text-emerald-600"></i>
+                            <span>Direct WhatsApp Sync</span>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <i class="fa-solid fa-check text-emerald-600"></i>
+                            <span>$3.00 - $7.00 Target CPL</span>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+            <!-- CAMPAIGN RESULTS SECTION (Below Hero Section) -->
+            <section id="proof" class="py-12 bg-slate-50 border-y border-slate-200">
+                <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                    
+                    <div class="text-center max-w-2xl mx-auto mb-10">
+                        <span class="text-deepMaroon-800 font-extrabold text-xs tracking-widest uppercase block mb-1">Live Ad Proof</span>
+                        <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 font-sora">
+                            Live <span class="text-maroon-gradient">Campaign Results</span>
+                        </h2>
+                        <p class="text-slate-600 text-xs sm:text-sm font-medium mt-1">
+                            Real performance data from active Japanese car export campaigns across multiple regions.
+                        </p>
+                    </div>
+
+                    <!-- Individual Divs Grid for Images/Campaigns -->
+                    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+                        <!-- Campaign Card 1 -->
+                        <div class="bg-white rounded-2xl p-5 shadow-glass border border-slate-200 transition-all hover:shadow-cardHover">
+                            <div class="flex items-center justify-between pb-3 mb-4 border-b border-slate-100">
+                                <div class="flex items-center gap-2">
+                                    <span class="w-2.5 h-2.5 rounded-full bg-emerald-500"></span>
+                                    <span class="text-[10px] font-bold text-slate-700 uppercase tracking-wider">Active Leads</span>
+                                </div>
+                                <span class="px-2 py-0.5 rounded bg-emerald-50 text-emerald-700 border border-emerald-200 text-[10px] font-extrabold uppercase">
+                                    Active
+                                </span>
+                            </div>
+                            <h3 class="text-base font-extrabold text-slate-900 font-sora mb-3">New Leads Campaign</h3>
+                            <div class="grid grid-cols-2 gap-2 bg-slate-50 p-3 rounded-xl border border-slate-100">
+                                <div>
+                                    <p class="text-[10px] font-bold text-slate-400 uppercase">Leads (Form)</p>
+                                    <p class="text-lg font-extrabold text-slate-900 font-sora">17</p>
+                                </div>
+                                <div>
+                                    <p class="text-[10px] font-bold text-slate-400 uppercase">Cost Per Lead</p>
+                                    <p class="text-lg font-extrabold text-deepMaroon-900 font-sora">$7.65</p>
+                                </div>
+                            </div>
+                            <div class="mt-3 pt-3 border-t border-slate-100 flex items-center justify-between text-xs font-semibold">
+                                <span class="text-slate-500">Total Spent:</span>
+                                <span class="font-extrabold text-slate-900">$129.98</span>
+                            </div>
+                        </div>
+
+                        <!-- Campaign Card 2 -->
+                        <div class="bg-white rounded-2xl p-5 shadow-glass border border-slate-200 transition-all hover:shadow-cardHover">
+                            <div class="flex items-center justify-between pb-3 mb-4 border-b border-slate-100">
+                                <div class="flex items-center gap-2">
+                                    <span class="w-2.5 h-2.5 rounded-full bg-slate-400"></span>
+                                    <span class="text-[10px] font-bold text-slate-700 uppercase tracking-wider">Off Leads</span>
+                                </div>
+                                <span class="px-2 py-0.5 rounded bg-slate-100 text-slate-600 text-[10px] font-extrabold uppercase">
+                                    Completed
+                                </span>
+                            </div>
+                            <h3 class="text-base font-extrabold text-slate-900 font-sora mb-3">New Leads Campaign</h3>
+                            <div class="grid grid-cols-2 gap-2 bg-slate-50 p-3 rounded-xl border border-slate-100">
+                                <div>
+                                    <p class="text-[10px] font-bold text-slate-400 uppercase">Leads (Form)</p>
+                                    <p class="text-lg font-extrabold text-slate-900 font-sora">7</p>
+                                </div>
+                                <div>
+                                    <p class="text-[10px] font-bold text-slate-400 uppercase">Cost Per Lead</p>
+                                    <p class="text-lg font-extrabold text-deepMaroon-900 font-sora">$5.65</p>
+                                </div>
+                            </div>
+                            <div class="mt-3 pt-3 border-t border-slate-100 flex items-center justify-between text-xs font-semibold">
+                                <span class="text-slate-500">Total Spent:</span>
+                                <span class="font-extrabold text-slate-900">$39.57</span>
+                            </div>
+                        </div>
+
+                        <!-- Campaign Card 3 -->
+                        <div class="bg-white rounded-2xl p-5 shadow-glass border border-slate-200 transition-all hover:shadow-cardHover">
+                            <div class="flex items-center justify-between pb-3 mb-4 border-b border-slate-100">
+                                <div class="flex items-center gap-2">
+                                    <span class="w-2.5 h-2.5 rounded-full bg-slate-400"></span>
+                                    <span class="text-[10px] font-bold text-slate-700 uppercase tracking-wider">Off Leads</span>
+                                </div>
+                                <span class="px-2 py-0.5 rounded bg-slate-100 text-slate-600 text-[10px] font-extrabold uppercase">
+                                    Completed
+                                </span>
+                            </div>
+                            <h3 class="text-base font-extrabold text-slate-900 font-sora mb-3">10% shipment deposit campaign</h3>
+                            <div class="grid grid-cols-2 gap-2 bg-slate-50 p-3 rounded-xl border border-slate-100">
+                                <div>
+                                    <p class="text-[10px] font-bold text-slate-400 uppercase">Leads (Form)</p>
+                                    <p class="text-lg font-extrabold text-slate-900 font-sora">6</p>
+                                </div>
+                                <div>
+                                    <p class="text-[10px] font-bold text-slate-400 uppercase">Cost Per Lead</p>
+                                    <p class="text-lg font-extrabold text-deepMaroon-900 font-sora">$8.64</p>
+                                </div>
+                            </div>
+                            <div class="mt-3 pt-3 border-t border-slate-100 flex items-center justify-between text-xs font-semibold">
+                                <span class="text-slate-500">Total Spent:</span>
+                                <span class="font-extrabold text-slate-900">$51.84</span>
+                            </div>
+                        </div>
+
+                        <!-- Campaign Card 4 -->
+                        <div class="bg-white rounded-2xl p-5 shadow-glass border border-slate-200 transition-all hover:shadow-cardHover">
+                            <div class="flex items-center justify-between pb-3 mb-4 border-b border-slate-100">
+                                <div class="flex items-center gap-2">
+                                    <span class="w-2.5 h-2.5 rounded-full bg-slate-400"></span>
+                                    <span class="text-[10px] font-bold text-slate-700 uppercase tracking-wider">Off Traffic</span>
+                                </div>
+                                <span class="px-2 py-0.5 rounded bg-slate-100 text-slate-600 text-[10px] font-extrabold uppercase">
+                                    Traffic
+                                </span>
+                            </div>
+                            <h3 class="text-base font-extrabold text-slate-900 font-sora mb-3">Website Traffic Campaign</h3>
+                            <div class="grid grid-cols-2 gap-2 bg-slate-50 p-3 rounded-xl border border-slate-100">
+                                <div>
+                                    <p class="text-[10px] font-bold text-slate-400 uppercase">Landing Page Views</p>
+                                    <p class="text-lg font-extrabold text-slate-900 font-sora">414</p>
+                                </div>
+                                <div>
+                                    <p class="text-[10px] font-bold text-slate-400 uppercase">Cost Per View</p>
+                                    <p class="text-lg font-extrabold text-deepMaroon-900 font-sora">$0.17</p>
+                                </div>
+                            </div>
+                            <div class="mt-3 pt-3 border-t border-slate-100 flex items-center justify-between text-xs font-semibold">
+                                <span class="text-slate-500">Total Spent:</span>
+                                <span class="font-extrabold text-slate-900">$70.47</span>
+                            </div>
+                        </div>
+
+                        <!-- Campaign Card 5 -->
+                        <div class="bg-white rounded-2xl p-5 shadow-glass border border-slate-200 transition-all hover:shadow-cardHover">
+                            <div class="flex items-center justify-between pb-3 mb-4 border-b border-slate-100">
+                                <div class="flex items-center gap-2">
+                                    <span class="w-2.5 h-2.5 rounded-full bg-slate-400"></span>
+                                    <span class="text-[10px] font-bold text-slate-700 uppercase tracking-wider">Off Leads</span>
+                                </div>
+                                <span class="px-2 py-0.5 rounded bg-slate-100 text-slate-600 text-[10px] font-extrabold uppercase">
+                                    Completed
+                                </span>
+                            </div>
+                            <h3 class="text-base font-extrabold text-slate-900 font-sora mb-3">suriname</h3>
+                            <div class="grid grid-cols-2 gap-2 bg-slate-50 p-3 rounded-xl border border-slate-100">
+                                <div>
+                                    <p class="text-[10px] font-bold text-slate-400 uppercase">Leads (Form)</p>
+                                    <p class="text-lg font-extrabold text-slate-900 font-sora">76</p>
+                                </div>
+                                <div>
+                                    <p class="text-[10px] font-bold text-slate-400 uppercase">Cost Per Lead</p>
+                                    <p class="text-lg font-extrabold text-deepMaroon-900 font-sora">$2.67</p>
+                                </div>
+                            </div>
+                            <div class="mt-3 pt-3 border-t border-slate-100 flex items-center justify-between text-xs font-semibold">
+                                <span class="text-slate-500">Total Spent:</span>
+                                <span class="font-extrabold text-slate-900">$202.69</span>
+                            </div>
+                        </div>
+
+                        <!-- Campaign Card 6 -->
+                        <div class="bg-white rounded-2xl p-5 shadow-glass border border-slate-200 transition-all hover:shadow-cardHover">
+                            <div class="flex items-center justify-between pb-3 mb-4 border-b border-slate-100">
+                                <div class="flex items-center gap-2">
+                                    <span class="w-2.5 h-2.5 rounded-full bg-slate-400"></span>
+                                    <span class="text-[10px] font-bold text-slate-700 uppercase tracking-wider">Off Leads</span>
+                                </div>
+                                <span class="px-2 py-0.5 rounded bg-slate-100 text-slate-600 text-[10px] font-extrabold uppercase">
+                                    Completed
+                                </span>
+                            </div>
+                            <h3 class="text-base font-extrabold text-slate-900 font-sora mb-3">Trinidad Leads Campagin</h3>
+                            <div class="grid grid-cols-2 gap-2 bg-slate-50 p-3 rounded-xl border border-slate-100">
+                                <div>
+                                    <p class="text-[10px] font-bold text-slate-400 uppercase">Leads (Form)</p>
+                                    <p class="text-lg font-extrabold text-slate-900 font-sora">103</p>
+                                </div>
+                                <div>
+                                    <p class="text-[10px] font-bold text-slate-400 uppercase">Cost Per Lead</p>
+                                    <p class="text-lg font-extrabold text-deepMaroon-900 font-sora">$2.16</p>
+                                </div>
+                            </div>
+                            <div class="mt-3 pt-3 border-t border-slate-100 flex items-center justify-between text-xs font-semibold">
+                                <span class="text-slate-500">Total Spent:</span>
+                                <span class="font-extrabold text-slate-900">$222.24</span>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </section>
+
+            <!-- CONTINUOUS TICKER MARQUEE -->
+            <section class="bg-slate-900 text-white py-3.5 font-bold text-[11px] tracking-widest uppercase overflow-hidden border-y border-slate-800">
+                <div class="animate-marquee whitespace-nowrap flex items-center gap-8">
+                    <span>🔥 QUALIFIED CARIBBEAN & GLOBAL CAR DEALER LEADS</span>
+                    <span class="text-deepMaroon-600">•</span>
+                    <span>🇯🇲 JAMAICA, 🇹T TRINIDAD, 🇬🇾 GUYANA, 🇧🇸 BAHAMAS EXPORT MARKET</span>
+                    <span class="text-deepMaroon-600">•</span>
+                    <span>🇬🇧 UK & 🇺🇸 USA JDM ENTHUSIASTS & DEALERS</span>
+                    <span class="text-deepMaroon-600">•</span>
+                    <span>🇦🇪 GCC & MIDDLE EAST COMMERCIAL WHOLESALERS</span>
+                    <span class="text-deepMaroon-600">•</span>
+                    <span>🇰🇪 EAST AFRICA & SOUTH PACIFIC REGIONS</span>
+                    <span class="text-deepMaroon-600">•</span>
+                    <span>📊 CPL TARGET: $3.00 - $7.00 USD</span>
+                    <span class="text-deepMaroon-600">•</span>
+                    <span>📲 DIRECT TO WHATSAPP CONVERSIONS</span>
+                    <span class="text-deepMaroon-600">•</span>
+                    <!-- Loop duplication -->
+                    <span>🔥 QUALIFIED CARIBBEAN & GLOBAL CAR DEALER LEADS</span>
+                    <span class="text-deepMaroon-600">•</span>
+                    <span>🇯🇲 JAMAICA, 🇹T TRINIDAD, 🇬🇾 GUYANA, 🇧🇸 BAHAMAS EXPORT MARKET</span>
+                    <span class="text-deepMaroon-600">•</span>
+                    <span>🇬🇧 UK & 🇺🇸 USA JDM ENTHUSIASTS & DEALERS</span>
+                    <span class="text-deepMaroon-600">•</span>
+                    <span>🇦🇪 GCC & MIDDLE EAST COMMERCIAL WHOLESALERS</span>
+                    <span class="text-deepMaroon-600">•</span>
+                    <span>🇰🇪 EAST AFRICA & SOUTH PACIFIC REGIONS</span>
+                    <span class="text-deepMaroon-600">•</span>
+                    <span>📊 CPL TARGET: $3.00 - $7.00 USD</span>
+                    <span class="text-deepMaroon-600">•</span>
+                    <span>📲 DIRECT TO WHATSAPP CONVERSIONS</span>
+                    <span class="text-deepMaroon-600">•</span>
+                </div>
+            </section>
+
+            <!-- QUICK INDUSTRY METRICS (1000+ leads updated here) -->
+            <section class="py-12 bg-white border-b border-slate-200">
+                <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                    <div class="grid grid-cols-2 lg:grid-cols-4 gap-6">
+                        
+                        <div class="p-5 rounded-xl bg-slate-50 border border-slate-200/80 text-center">
+                            <p class="text-2xl sm:text-3xl font-extrabold text-slate-900 font-sora">2+ Years</p>
+                            <p class="text-[11px] text-slate-500 font-bold uppercase tracking-wider mt-1">Car Export Specialization</p>
+                        </div>
+
+                        <div class="p-5 rounded-xl bg-slate-50 border border-slate-200/80 text-center">
+                            <p class="text-2xl sm:text-3xl font-extrabold text-slate-900 font-sora">1000+</p>
+                            <p class="text-[11px] text-slate-500 font-bold uppercase tracking-wider mt-1">Qualified Monthly Leads</p>
+                        </div>
+
+                        <div class="p-5 rounded-xl bg-slate-50 border border-slate-200/80 text-center">
+                            <p class="text-2xl sm:text-3xl font-extrabold text-slate-900 font-sora">$3 - $7</p>
+                            <p class="text-[11px] text-slate-500 font-bold uppercase tracking-wider mt-1">Cost Per Lead Range</p>
+                        </div>
+
+                        <div class="p-5 rounded-xl bg-slate-50 border border-slate-200/80 text-center">
+                            <p class="text-2xl sm:text-3xl font-extrabold text-slate-900 font-sora">100%</p>
+                            <p class="text-[11px] text-slate-500 font-bold uppercase tracking-wider mt-1">Exclusive To Your Desk</p>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+            <!-- REGIONAL COVERAGE SECTION -->
+            <section id="regions" class="py-16 bg-[#FAFAFC]">
+                <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                    
+                    <div class="text-center max-w-2xl mx-auto mb-12">
+                        <span class="text-deepMaroon-800 font-extrabold text-xs tracking-widest uppercase block mb-1">Global Market Reach</span>
+                        <h2 class="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-slate-900 font-sora">
+                            Global Target Export <span class="text-maroon-gradient">Regions We Cover</span>
+                        </h2>
+                        <p class="text-slate-600 text-xs sm:text-sm font-medium mt-2">
+                            Tailored campaign funnels designed for specific country import regulations and buyer profiles.
+                        </p>
+                    </div>
+
+                    <!-- 5 Region Grid Cards -->
+                    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                        
+                        <!-- Region 1: Caribbean -->
+                        <div class="bg-white rounded-2xl border border-slate-200 p-6 shadow-sm hover:shadow-md transition-shadow">
+                            <div class="flex items-center justify-between mb-4">
+                                <span class="px-3 py-1 rounded-full bg-deepMaroon-50 text-deepMaroon-900 border border-deepMaroon-200 text-xs font-extrabold">
+                                    🌴 Caribbean Region
+                                </span>
+                                <span class="text-xs font-bold text-slate-400">$3.00 - $4.50 CPL</span>
+                            </div>
+                            <h3 class="text-lg font-extrabold text-slate-900 font-sora mb-2">Jamaica, Trinidad & Guyana</h3>
+                            <p class="text-xs text-slate-600 leading-relaxed mb-4">
+                                Heavy demand for Japanese SUVs, commercial vans, hatchbacks, and passenger sedans. Direct dealer and private importer leads.
+                            </p>
+                            <div class="flex flex-wrap gap-1.5 text-[10px] font-bold text-slate-600 uppercase">
+                                <span class="px-2 py-0.5 rounded bg-slate-100">Jamaica</span>
+                                <span class="px-2 py-0.5 rounded bg-slate-100">Trinidad & Tobago</span>
+                                <span class="px-2 py-0.5 rounded bg-slate-100">Guyana</span>
+                                <span class="px-2 py-0.5 rounded bg-slate-100">Bahamas</span>
+                                <span class="px-2 py-0.5 rounded bg-slate-100">Barbados</span>
+                            </div>
+                        </div>
+
+                        <!-- Region 2: United Kingdom -->
+                        <div class="bg-white rounded-2xl border border-slate-200 p-6 shadow-sm hover:shadow-md transition-shadow">
+                            <div class="flex items-center justify-between mb-4">
+                                <span class="px-3 py-1 rounded-full bg-deepMaroon-50 text-deepMaroon-900 border border-deepMaroon-200 text-xs font-extrabold">
+                                    🇬🇧 United Kingdom
+                                </span>
+                                <span class="text-xs font-bold text-slate-400">$4.00 - $6.00 CPL</span>
+                            </div>
+                            <h3 class="text-lg font-extrabold text-slate-900 font-sora mb-2">RHD Dealer & Direct Buyers</h3>
+                            <p class="text-xs text-slate-600 leading-relaxed mb-4">
+                                High-intent buyers for clean Right-Hand Drive (RHD) Japanese imports, campervans, sports cars, and luxury MPVs.
+                            </p>
+                            <div class="flex flex-wrap gap-1.5 text-[10px] font-bold text-slate-600 uppercase">
+                                <span class="px-2 py-0.5 rounded bg-slate-100">RHD Import Dealers</span>
+                                <span class="px-2 py-0.5 rounded bg-slate-100">Camper Van Importers</span>
+                                <span class="px-2 py-0.5 rounded bg-slate-100">Private Buyers</span>
+                            </div>
+                        </div>
+
+                        <!-- Region 3: United States -->
+                        <div class="bg-white rounded-2xl border border-slate-200 p-6 shadow-sm hover:shadow-md transition-shadow">
+                            <div class="flex items-center justify-between mb-4">
+                                <span class="px-3 py-1 rounded-full bg-deepMaroon-50 text-deepMaroon-900 border border-deepMaroon-200 text-xs font-extrabold">
+                                    🇺🇸 United States
+                                </span>
+                                <span class="text-xs font-bold text-slate-400">$4.50 - $7.00 CPL</span>
+                            </div>
+                            <h3 class="text-lg font-extrabold text-slate-900 font-sora mb-2">USA JDM 25-Year Rule</h3>
+                            <p class="text-xs text-slate-600 leading-relaxed mb-4">
+                                Targeting JDM enthusiast dealers and collectors looking for 25+ year-old Japanese classic sports cars, trucks, and mini-trucks.
+                            </p>
+                            <div class="flex flex-wrap gap-1.5 text-[10px] font-bold text-slate-600 uppercase">
+                                <span class="px-2 py-0.5 rounded bg-slate-100">25-Year Classic JDM</span>
+                                <span class="px-2 py-0.5 rounded bg-slate-100">Kei Trucks</span>
+                                <span class="px-2 py-0.5 rounded bg-slate-100">Collector Outlets</span>
+                            </div>
+                        </div>
+
+                        <!-- Region 4: GCC & Middle East -->
+                        <div class="bg-white rounded-2xl border border-slate-200 p-6 shadow-sm hover:shadow-md transition-shadow">
+                            <div class="flex items-center justify-between mb-4">
+                                <span class="px-3 py-1 rounded-full bg-deepMaroon-50 text-deepMaroon-900 border border-deepMaroon-200 text-xs font-extrabold">
+                                    🇦🇪 GCC & Middle East
+                                </span>
+                                <span class="text-xs font-bold text-slate-400">$3.50 - $5.50 CPL</span>
+                            </div>
+                            <h3 class="text-lg font-extrabold text-slate-900 font-sora mb-2">UAE, Saudi Arabia & Oman</h3>
+                            <p class="text-xs text-slate-600 leading-relaxed mb-4">
+                                Wholesalers and commercial fleet dealers looking for LHD conversions, luxury SUVs, and heavy commercial machinery re-exports.
+                            </p>
+                            <div class="flex flex-wrap gap-1.5 text-[10px] font-bold text-slate-600 uppercase">
+                                <span class="px-2 py-0.5 rounded bg-slate-100">UAE (Dubai/Sharjah)</span>
+                                <span class="px-2 py-0.5 rounded bg-slate-100">Saudi Arabia</span>
+                                <span class="px-2 py-0.5 rounded bg-slate-100">Oman & Bahrain</span>
+                            </div>
+                        </div>
+
+                        <!-- Region 5: East Africa & South Pacific -->
+                        <div class="bg-white rounded-2xl border border-slate-200 p-6 shadow-sm hover:shadow-md transition-shadow md:col-span-2 lg:col-span-1">
+                            <div class="flex items-center justify-between mb-4">
+                                <span class="px-3 py-1 rounded-full bg-deepMaroon-50 text-deepMaroon-900 border border-deepMaroon-200 text-xs font-extrabold">
+                                    🌍 East Africa & South Pacific
+                                </span>
+                                <span class="text-xs font-bold text-slate-400">$3.00 - $5.00 CPL</span>
+                            </div>
+                            <h3 class="text-lg font-extrabold text-slate-900 font-sora mb-2">Kenya, Tanzania, Fiji & Samoa</h3>
+                            <p class="text-xs text-slate-600 leading-relaxed mb-4">
+                                Constant buyer demand for reliable Japanese crossovers, commercial pickups, and public transport buses across regional yards.
+                            </p>
+                            <div class="flex flex-wrap gap-1.5 text-[10px] font-bold text-slate-600 uppercase">
+                                <span class="px-2 py-0.5 rounded bg-slate-100">Kenya & Uganda</span>
+                                <span class="px-2 py-0.5 rounded bg-slate-100">Tanzania</span>
+                                <span class="px-2 py-0.5 rounded bg-slate-100">Fiji & Samoa</span>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </section>
+
+            <!-- PERFORMANCE ADVANTAGE SECTION -->
+            <section id="performance" class="py-16 bg-white border-y border-slate-200">
+                <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                    
+                    <div class="text-center max-w-2xl mx-auto mb-12">
+                        <span class="text-deepMaroon-800 font-extrabold text-xs tracking-widest uppercase block mb-1">Performance Matrix</span>
+                        <h2 class="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-slate-900 font-sora">
+                            Why direct Meta ads <span class="text-maroon-gradient">outperform stock portals</span>
+                        </h2>
+                        <p class="text-slate-600 text-xs sm:text-sm font-medium mt-2">Eliminate heavy portal commission fees and stop competing over shared leads.</p>
+                    </div>
+
+                    <div class="overflow-x-auto rounded-2xl border border-slate-200 shadow-sm bg-white">
+                        <table class="w-full text-left border-collapse min-w-[650px]">
+                            <thead>
+                                <tr class="bg-slate-50 border-b border-slate-200 text-[11px] font-bold uppercase tracking-wider text-slate-500">
+                                    <th class="p-4">Feature / Channel</th>
+                                    <th class="p-4 bg-deepMaroon-50 text-deepMaroon-900 border-x border-deepMaroon-200">
+                                        <div class="flex items-center gap-1.5 font-sora font-extrabold text-xs">
+                                            <i class="fa-solid fa-bolt text-deepMaroon-700"></i>
+                                            <span>Automotive Lead Gen Engine</span>
+                                        </div>
+                                    </th>
+                                    <th class="p-4">Stock Portals (TCV/etc.)</th>
+                                    <th class="p-4">Cold Outreach / Email</th>
+                                </tr>
+                            </thead>
+                            <tbody class="divide-y divide-slate-200 text-xs font-semibold">
+                                <tr>
+                                    <td class="p-4 font-bold text-slate-900">Lead Exclusivity</td>
+                                    <td class="p-4 bg-deepMaroon-50/40 text-deepMaroon-900 font-extrabold border-x border-deepMaroon-200">
+                                        <i class="fa-solid fa-check text-emerald-600 mr-1.5"></i> 100% Exclusive
+                                    </td>
+                                    <td class="p-4 text-red-600">Shared With 50+ Exporters</td>
+                                    <td class="p-4 text-slate-500">Unsolicited / Low Intent</td>
+                                </tr>
+                                <tr>
+                                    <td class="p-4 font-bold text-slate-900">Delivery Channel</td>
+                                    <td class="p-4 bg-deepMaroon-50/40 text-deepMaroon-900 font-extrabold border-x border-deepMaroon-200">
+                                        <i class="fa-solid fa-check text-emerald-600 mr-1.5"></i> Instant WhatsApp Chat
+                                    </td>
+                                    <td class="p-4 text-slate-500">Slow Portal Inquiries</td>
+                                    <td class="p-4 text-slate-500">Low Email Open Rates</td>
+                                </tr>
+                                <tr>
+                                    <td class="p-4 font-bold text-slate-900">Target Region Precision</td>
+                                    <td class="p-4 bg-deepMaroon-50/40 text-deepMaroon-900 font-extrabold border-x border-deepMaroon-200">
+                                        <i class="fa-solid fa-check text-emerald-600 mr-1.5"></i> Caribbean, UK, USA, GCC, Africa
+                                    </td>
+                                    <td class="p-4 text-slate-500">Generic Marketplace Traffic</td>
+                                    <td class="p-4 text-slate-500">Scraped Outdated Lists</td>
+                                </tr>
+                                <tr>
+                                    <td class="p-4 font-bold text-slate-900">Cost Structure</td>
+                                    <td class="p-4 bg-deepMaroon-50/40 text-deepMaroon-900 font-extrabold border-x border-deepMaroon-200">
+                                        <i class="fa-solid fa-check text-emerald-600 mr-1.5"></i> $3.00 - $7.00 CPL Target
+                                    </td>
+                                    <td class="p-4 text-slate-500">Heavy Listing & Unit Fees</td>
+                                    <td class="p-4 text-slate-500">High Manual Outreach Cost</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                </div>
+            </section>
+
+            <!-- INTERACTIVE ROI LEAD CALCULATOR -->
+            <section id="calculator" class="py-16 bg-[#FAFAFC]">
+                <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                    
+                    <div class="bg-white rounded-2xl p-6 sm:p-10 border border-slate-200 shadow-sm">
+                        <div class="grid lg:grid-cols-12 gap-8 items-center">
+                            
+                            <div class="lg:col-span-5 space-y-3">
+                                <span class="px-2.5 py-1 rounded-md bg-deepMaroon-50 border border-deepMaroon-200 text-deepMaroon-900 text-[10px] font-extrabold tracking-wider uppercase">Lead Forecast Calculator</span>
+                                <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 font-sora">
+                                    Calculate your monthly lead potential
+                                </h2>
+                                <p class="text-slate-600 text-xs sm:text-sm font-medium leading-relaxed">
+                                    Adjust your monthly Meta ad budget slider to project expected buyer inquiries based on our verified <strong>$3.00 - $7.00 CPL benchmark</strong>.
+                                </p>
+                            </div>
+
+                            <div class="lg:col-span-7 bg-slate-50 p-6 rounded-xl border border-slate-200 space-y-5">
+                                <div>
+                                    <div class="flex justify-between items-center mb-2">
+                                        <label class="text-xs font-bold text-slate-700 uppercase tracking-wider">Monthly Meta Ad Budget (USD)</label>
+                                        <span id="budgetValue" class="text-xl font-extrabold text-deepMaroon-900 font-sora">$500</span>
+                                    </div>
+                                    <input type="range" id="budgetSlider" min="300" max="5000" step="100" value="500" class="w-full">
+                                    <div class="flex justify-between text-[10px] text-slate-400 font-bold mt-1.5">
+                                        <span>$300/mo (Starter)</span>
+                                        <span>$1,500/mo (Growth)</span>
+                                        <span>$5,000/mo (Scale)</span>
+                                    </div>
+                                </div>
+
+                                <div class="grid grid-cols-2 sm:grid-cols-3 gap-3 pt-3 border-t border-slate-200">
+                                    <div class="p-3 rounded-lg bg-white border border-slate-200">
+                                        <p class="text-[10px] font-bold text-slate-500 uppercase">Est. Monthly Leads</p>
+                                        <p id="calcLeads" class="text-xl font-extrabold text-slate-900 font-sora mt-0.5">111 Leads</p>
+                                    </div>
+                                    <div class="p-3 rounded-lg bg-white border border-slate-200">
+                                        <p class="text-[10px] font-bold text-slate-500 uppercase">CPL Benchmark</p>
+                                        <p id="calcCPL" class="text-xl font-extrabold text-deepMaroon-800 font-sora mt-0.5">$3.00 - $7.00</p>
+                                    </div>
+                                    <div class="col-span-2 sm:col-span-1 p-3 rounded-lg bg-deepMaroon-50 border border-deepMaroon-200">
+                                        <p class="text-[10px] font-extrabold text-deepMaroon-900 uppercase">Est. Vehicle Exports</p>
+                                        <p id="calcSales" class="text-xl font-extrabold text-deepMaroon-900 font-sora mt-0.5">8 - 12 Cars</p>
+                                    </div>
+                                </div>
+
+                                <a href="https://forms.gle/h6YJxE1LcGhWpSx38" target="_blank" class="w-full py-3 rounded-xl bg-maroon-gradient text-white font-bold text-xs uppercase tracking-wider flex items-center justify-center gap-2 bg-maroon-gradient-hover shadow-sm cursor-pointer">
+                                    <span>Lock In Campaign Budget</span>
+                                    <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                                </a>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+            <!-- LEAD CONTACT FORM SECTION -->
+            <section id="lead-form" class="py-16 bg-white border-t border-slate-200">
+                <div class="max-w-2xl mx-auto px-4 sm:px-6 lg:px-8">
+                    
+                    <div id="formCard" class="bg-slate-50 rounded-2xl p-8 sm:p-12 border border-slate-200 shadow-sm text-center transition-all duration-500">
+                        
+                        <div class="max-w-md mx-auto mb-6 space-y-2">
+                            <span class="px-2.5 py-1 rounded-md bg-deepMaroon-50 text-deepMaroon-900 text-[10px] font-extrabold tracking-wider uppercase">Direct Onboarding</span>
+                            <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 font-sora">
+                                Contact Us To Start Leads
+                            </h2>
+                            <p class="text-slate-600 text-xs font-medium leading-relaxed">
+                                Fill out our quick requirement form to connect directly with our Japanese export growth team.
+                            </p>
+                        </div>
+
+                        <!-- CTA Button replacing the manual form -->
+                        <a href="https://forms.gle/h6YJxE1LcGhWpSx38" target="_blank" class="w-full max-w-md mx-auto py-4 px-6 rounded-xl bg-maroon-gradient text-white font-extrabold text-sm uppercase tracking-widest flex items-center justify-center gap-3 bg-maroon-gradient-hover shadow-md cursor-pointer transition-all">
+                            <span>Open Onboarding Form</span>
+                            <i class="fa-solid fa-arrow-up-right-from-square text-xs"></i>
+                        </a>
+
+                    </div>
+
+                </div>
+            </section>
+
+            <!-- FAQ ACCORDION -->
+            <section id="faqs" class="py-16 bg-[#FAFAFC]">
+                <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+                    
+                    <div class="text-center mb-10">
+                        <span class="text-deepMaroon-800 font-extrabold text-xs tracking-widest uppercase block mb-1">Common Inquiries</span>
+                        <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 font-sora">Frequently Asked Questions</h2>
+                    </div>
+
+                    <div class="space-y-3">
+                        
+                        <div class="bg-white rounded-xl border border-slate-200 overflow-hidden shadow-sm">
+                            <button class="w-full px-5 py-3.5 text-left flex items-center justify-between font-bold text-xs uppercase tracking-wide text-slate-900 hover:text-deepMaroon-800 transition-colors faq-btn">
+                                <span>What is the average Cost Per Lead (CPL)?</span>
+                                <i class="fa-solid fa-chevron-down text-slate-400 text-xs transition-transform duration-300"></i>
+                            </button>
+                            <div class="px-5 pb-3.5 text-xs text-slate-600 font-medium hidden faq-answer border-t border-slate-100 pt-2.5">
+                                Depending on the destination region (Caribbean vs. UK/USA JDM market), average Cost Per Lead ranges between <strong>$3.00 to $7.00 USD</strong> for verified, high-intent buyer inquiries.
+                            </div>
+                        </div>
+
+                        <div class="bg-white rounded-xl border border-slate-200 overflow-hidden shadow-sm">
+                            <button class="w-full px-5 py-3.5 text-left flex items-center justify-between font-bold text-xs uppercase tracking-wide text-slate-900 hover:text-deepMaroon-800 transition-colors faq-btn">
+                                <span>Are these leads 100% exclusive to my sales desk?</span>
+                                <i class="fa-solid fa-chevron-down text-slate-400 text-xs transition-transform duration-300"></i>
+                            </button>
+                            <div class="px-5 pb-3.5 text-xs text-slate-600 font-medium hidden faq-answer border-t border-slate-100 pt-2.5">
+                                Yes. Unlike stock portals where leads are broadcast to dozens of competing exporters, every lead generated from your campaign lands 100% exclusively on your WhatsApp.
+                            </div>
+                        </div>
+
+                        <div class="bg-white rounded-xl border border-slate-200 overflow-hidden shadow-sm">
+                            <button class="w-full px-5 py-3.5 text-left flex items-center justify-between font-bold text-xs uppercase tracking-wide text-slate-900 hover:text-deepMaroon-800 transition-colors faq-btn">
+                                <span>How quickly do campaigns launch?</span>
+                                <i class="fa-solid fa-chevron-down text-slate-400 text-xs transition-transform duration-300"></i>
+                            </button>
+                            <div class="px-5 pb-3.5 text-xs text-slate-600 font-medium hidden faq-answer border-t border-slate-100 pt-2.5">
+                                Campaigns go live within 24 to 48 hours after confirming target regions and budget setup. Inquiries immediately begin landing on your sales team's desk.
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </section>
+
+        </main>
+
+        <!-- FOOTER -->
+        <footer class="bg-slate-900 text-white border-t border-slate-800 py-10">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="flex flex-col md:flex-row items-center justify-between gap-4">
+                    
+                    <div class="flex items-center gap-2">
+                        <div class="w-6 h-6 rounded bg-deepMaroon-800 text-white flex items-center justify-center font-bold text-xs">
+                            <i class="fa-solid fa-car-side"></i>
+                        </div>
+                        <span class="font-extrabold text-white text-xs font-sora">
+                            Automotive <span class="text-deepMaroon-600">Lead Gen</span>
+                        </span>
+                    </div>
+
+                    <p class="text-[11px] text-slate-400 text-center">
+                        &copy; 2026 Automotive Lead Generation. B2B Growth Partner for Japanese Car Export Companies.
+                    </p>
+
+                    <div class="flex gap-5 text-slate-400 text-[11px] font-bold uppercase tracking-wider">
+                        <a href="#regions" class="hover:text-white transition-colors">Regions</a>
+                        <a href="#performance" class="hover:text-white transition-colors">Performance</a>
+                        <a href="#calculator" class="hover:text-white transition-colors">Calculator</a>
+                        <a href="https://forms.gle/h6YJxE1LcGhWpSx38" target="_blank" class="hover:text-white transition-colors">Contact Us</a>
+                    </div>
+
+                </div>
+            </div>
+        </footer>
+
+        <!-- Floating WhatsApp Button -->
+        <a href="https://wa.me/?text=Hi%2C%20I%20am%20interested%20in%20setting%20up%20a%20Japanese%20car%20export%20lead%20campaign" target="_blank" class="fixed bottom-5 right-5 z-40 w-12 h-12 rounded-full bg-emerald-500 text-white flex items-center justify-center text-xl shadow-lg hover:scale-110 transition-transform">
+            <i class="fa-brands fa-whatsapp"></i>
+        </a>
+
+    </div>
+
+    <script>
+        function toggleMobileDrawer() {
+            const mobileDrawer = document.getElementById('mobileDrawer');
+            if (mobileDrawer) {
+                mobileDrawer.classList.toggle('hidden');
+            }
+        }
+
+        document.addEventListener('DOMContentLoaded', function() {
+            
+            // 1. Motion Graphics Canvas ($3-$7 CPL Data Streams updated with 1000+ LEADS)
+            const canvas = document.getElementById('dataMotionCanvas');
+            if (canvas) {
+                const ctx = canvas.getContext('2d');
+                let width = canvas.width = window.innerWidth;
+                let height = canvas.height = window.innerHeight;
+
+                window.addEventListener('resize', () => {
+                    width = canvas.width = window.innerWidth;
+                    height = canvas.height = window.innerHeight;
+                });
+
+                const dataTokens = [
+                    "$3.50 CPL", "$4.20 CPL", "1000+ LEADS", "$5.80 CPL", "$3.80 CPL",
+                    "JM-DEALER", "UK-IMPORT", "$6.50 CPL", "GCC-FLEET", "$3.00 CPL",
+                    "USA-JDM", "100% EXCLUSIVE", "$4.80 CPL", "EXPORT-INTENT"
+                ];
+
+                const floatingElements = Array.from({ length: 22 }, () => ({
+                    text: dataTokens[Math.floor(Math.random() * dataTokens.length)],
+                    x: Math.random() * width,
+                    y: Math.random() * height,
+                    fontSize: Math.floor(Math.random() * 3) + 10,
+                    speedY: - (Math.random() * 0.35 + 0.1),
+                    opacity: Math.random() * 0.35 + 0.1
+                }));
+
+                const particles = Array.from({ length: 16 }, () => ({
+                    x: Math.random() * width,
+                    y: Math.random() * height,
+                    r: Math.random() * 2 + 1,
+                    dx: (Math.random() - 0.5) * 0.25,
+                    dy: (Math.random() - 0.5) * 0.25
+                }));
+
+                function renderMotionGraphics() {
+                    ctx.clearRect(0, 0, width, height);
+
+                    floatingElements.forEach(item => {
+                        item.y += item.speedY;
+                        if (item.y < -20) {
+                            item.y = height + 20;
+                            item.x = Math.random() * width;
+                        }
+
+                        ctx.font = `600 ${item.fontSize}px 'Sora', sans-serif`;
+                        ctx.fillStyle = `rgba(128, 0, 32, ${item.opacity})`;
+                        ctx.fillText(item.text, item.x, item.y);
+                    });
+
+                    ctx.fillStyle = 'rgba(128, 0, 32, 0.12)';
+                    particles.forEach((p, i) => {
+                        p.x += p.dx;
+                        p.y += p.dy;
+
+                        if (p.x < 0 || p.x > width) p.dx *= -1;
+                        if (p.y < 0 || p.y > height) p.dy *= -1;
+
+                        ctx.beginPath();
+                        ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2);
+                        ctx.fill();
+
+                        for (let j = i + 1; j < particles.length; j++) {
+                            const p2 = particles[j];
+                            const dist = Math.hypot(p.x - p2.x, p.y - p2.y);
+                            if (dist < 150) {
+                                ctx.strokeStyle = `rgba(128, 0, 32, ${0.07 * (1 - dist / 150)})`;
+                                ctx.lineWidth = 0.7;
+                                ctx.beginPath();
+                                ctx.moveTo(p.x, p.y);
+                                ctx.lineTo(p2.x, p2.y);
+                                ctx.stroke();
+                            }
+                        }
+                    });
+
+                    requestAnimationFrame(renderMotionGraphics);
+                }
+                renderMotionGraphics();
+            }
+
+            // 2. ROI Lead Calculator Logic
+            const budgetSlider = document.getElementById('budgetSlider');
+            const budgetValue = document.getElementById('budgetValue');
+            const calcLeads = document.getElementById('calcLeads');
+            const calcCPL = document.getElementById('calcCPL');
+            const calcSales = document.getElementById('calcSales');
+
+            function updateCalculator() {
+                if(!budgetSlider) return;
+                const budget = parseInt(budgetSlider.value);
+                budgetValue.textContent = '$' + budget.toLocaleString();
+                
+                const estLeads = Math.floor(budget / 4.50);
+                const minSales = Math.max(2, Math.floor(estLeads * 0.07));
+                const maxSales = Math.max(4, Math.floor(estLeads * 0.10));
+
+                calcLeads.textContent = estLeads + ' Leads';
+                calcCPL.textContent = '$3.00 - $7.00';
+                calcSales.textContent = minSales + ' - ' + maxSales + ' Cars';
+            }
+
+            if (budgetSlider) {
+                budgetSlider.addEventListener('input', updateCalculator);
+                updateCalculator();
+            }
+
+            // 3. FAQ Accordion Toggle
+            const faqButtons = document.querySelectorAll('.faq-btn');
+            faqButtons.forEach(btn => {
+                btn.addEventListener('click', () => {
+                    const answer = btn.nextElementSibling;
+                    const icon = btn.querySelector('i');
+                    answer.classList.toggle('hidden');
+                    icon.classList.toggle('rotate-180');
+                });
+            });
+
+            // 4. Mobile Drawer Toggle Button
+            const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+            if (mobileMenuBtn) {
+                mobileMenuBtn.addEventListener('click', toggleMobileDrawer);
+            }
+
+        });
+    </script>
+</body>
+</html>
